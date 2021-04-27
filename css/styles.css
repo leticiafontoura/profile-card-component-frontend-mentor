@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --darkcyan: hsl(185, 75%, 39%);
+    --darkblue: hsl(229, 23%, 23%);
+    --darkgrayblue: hsl(227, 10%, 46%);
+    --darkgray: hsl(0, 0%, 59%); 
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html, body {
+    background-color: var(--darkcyan);
+    min-height: 100vh;
+    min-width: 100vw;
+    font-size: 1em;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.c1, .c2 {
+    position: absolute;
+}
+
+.c1 {
+    top: -500px;
+    left: -300px;
+}
+
+.c2 {
+    bottom: -600px;
+    right: -300px;
+}
+
+main {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card-container {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.2), 0 6px 20px 0 rgba(150, 150, 150, 0.19);
+}
+
+.card__main{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__main img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    border: 4px solid white;
+}
+
+.card__header img {
+    display: block;
+}
+
+.card__main--heading {
+    text-align: center;
+    margin: 25px;
+}
+
+.card__main--heading p:nth-child(2), span {
+    color: var(--darkgrayblue);
+    font-weight: 400;
+}
+
+.card__main--heading p:nth-child(2) {
+    margin-top: 10px;
+}
+
+.card__stats {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--darkgray);
+    padding: 25px 0;
+}
+
+.stats1 p:first-child, .stats2 p:first-child, .stats3 p:first-child, .card__main--heading p:first-child {
+    color: var(--darkblue);
+    font-weight: 700;
+    font-size: 1.125em;
+    text-align: center;
+}
+
+.stats1 p:last-child, .stats2 p:last-child, .stats3 p:last-child {
+    font-size: 0.9em;
+    color: var(--darkgray);
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 5px;
+}
+
+
+footer {
+    z-index: 1;
+    margin-top: 20px;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--darkblue);
+}
+
+@media (max-width: 578px) {
+    .card-container {
+        width: 90%;
+    }
+
+    .card__header img {
+        width: 100%;
+    }
+    .c1 {
+        top: -700px;
+        left: -700px;
+    }
+    
+    .c2 {
+        bottom: -550px;
+        right: -750px;
+    }
+    
+    footer {
+        text-align: center;
+    }
+}
