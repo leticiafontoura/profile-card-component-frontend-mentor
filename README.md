@@ -19,7 +19,7 @@ Users should be able to:
 
 <p>Desktop</p>
 
-![desktop screenshot](https://i.imgur.com/Mj8LUDO.png)
+![desktop screenshot](https://i.imgur.com/RqofX80.png)
 
 <p>Mobile</p>
 
